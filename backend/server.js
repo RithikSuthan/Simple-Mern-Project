@@ -7,7 +7,7 @@ const Trainlist = require('./models/Trainlist')
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb+srv://Rithik_Suthan_S:8098329762@cluster0.nwyrzl2.mongodb.net/train?retryWrites=true&w=majority' , {
+mongoose.connect(<Your Conection URL> , {
 	useNewUrlParser: true, 
 	useUnifiedTopology: true 
 }).then(() => console.log("Connected to MongoDB")).catch(console.error);
